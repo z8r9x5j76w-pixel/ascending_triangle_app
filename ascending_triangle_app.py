@@ -23,8 +23,8 @@ st.set_page_config(
 
 # ── Production params (v1.0) ──────────────────────────────────────────────────
 SL              = 0.02
-TP              = 0.12
-MAX_HOLD        = 20
+TP              = 0.18
+MAX_HOLD        = 25
 NOTIONAL        = 2000.0
 MAX_POSITIONS   = 10
 TREND_SMA       = 50
@@ -33,16 +33,16 @@ PERIOD          = "5y"
 BATCH_SIZE      = 20
 
 # Triangle detection params
-RESIST_TOL      = 0.02    # resistance touches within 2%
-MIN_TOUCHES     = 2       # min touches of resistance
-MIN_HIGHER_LOWS = 2       # min rising lows
+RESIST_TOL      = 0.04    # resistance touches within 2%
+MIN_TOUCHES     = 4       # min touches of resistance
+MIN_HIGHER_LOWS = 1       # min rising lows
 CONSOL_MIN      = 10      # min consolidation bars
 CONSOL_MAX      = 40      # max consolidation bars
-POLE_MIN_BARS   = 10      # pole lookback min
-POLE_MAX_BARS   = 30      # pole lookback max
+POLE_MIN_BARS   = 12      # pole lookback min
+POLE_MAX_BARS   = 28      # pole lookback max
 POLE_MIN_PCT    = 0.08    # pole min gain
-POLE_MAX_PCT    = 0.25    # pole max gain
-BRK_BUFFER      = 0.002   # breakout buffer above resistance
+POLE_MAX_PCT    = 0.22    # pole max gain
+BRK_BUFFER      = 0.003   # breakout buffer above resistance
 
 # ── Universe ──────────────────────────────────────────────────────────────────
 TICKERS = [
